@@ -28,7 +28,7 @@ public class Cliente {
         try {
             
             // Buscar el registro RMI
-            Registry registry = LocateRegistry.getRegistry("localhost", 8080);
+            Registry registry = LocateRegistry.getRegistry("10.194.0.4", 8080);
 
             // Obtener la referencia al servicio remoto
             Sensor sensor = (Sensor) registry.lookup("SensorService");
